@@ -5,7 +5,7 @@ A frontend prototype for **TenderAI**, an AI-powered tender intelligence platfor
 This repo is the **UI/UX layer only** — built as a hands-on project while learning HTML, CSS, and JavaScript. No backend yet; that's the next phase.
 
 ## 🔗 Live Demo
-[https://shantanudiwedi.github.io/tender.ai-ui-prototype/](#) <!-- add your GitHub Pages link here once deployed -->
+[https://shantanudiwedi.github.io/tender.ai-ui-prototype/] 
 
 ## 📄 Pages
 - **Dashboard** — overview stats (total/active tenders, bids submitted, success ratio)
