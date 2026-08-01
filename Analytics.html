@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tender.Ai</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="functions">
+        <div class="logo">
+          <div class="logo1"><span>Tender</span>.Ai</div>
+          <div class="logotext">Find , Bid , Win</div>
+        </div>
+        <div class="Func">
+          <i class="fa-solid fa-gauge"></i>
+          <a href="index.html">Dashboard</a>
+        </div>
+        <div class="Func">
+          <i class="fa-solid fa-magnifying-glass"></i
+          ><a href="Find_Tenders.html">Find Tenders</a>
+        </div>
+        <div class="Func">
+          <i class="fa-solid fa-briefcase"></i
+          ><a href="My_Bids.html">My Bids</a>
+        </div>
+        <div class="Func active">
+          <i class="fa-solid fa-chart-line"></i
+          ><a href="Analytics.html">Analytics</a>
+        </div>
+        <div class="Func">
+          <i class="fa-regular fa-bell"></i><a href="Alert.html">Alert</a>
+        </div>
+        <div class="sidebar-divider"></div>
+        <div class="Func">
+          <i class="fa-solid fa-gear"></i><a href="Settings.html">Settings</a>
+        </div>
+      </div>
+      <div class="main">
+        <div class="navbar">
+          <div class="searchbar">
+            <input type="text" placeholder="Search Tender" />
+          </div>
+
+          <i class="fa-regular fa-bell notification"></i>
+          <img
+            class="profilephoto"
+            src="https://res.cloudinary.com/purnesh/image/upload/v1597850424/ti6l5iyewdwzypwzfgj6.png"
+            alt="Account profile"
+          />
+        </div>
+
+        <div class="header">
+          <h1>Analytics</h1>
+          <p>Track your bidding performance and trends.</p>
+        </div>
+
+        <div class="cardsbox">
+          <div class="card">
+            <h3>Total Bids</h3>
+            <h2>89</h2>
+            <p><span class="increse">+8%</span> vs last quarter</p>
+          </div>
+          <div class="card">
+            <h3>Win Rate</h3>
+            <h2>32%</h2>
+            <p><span class="increse">+4%</span> vs last quarter</p>
+          </div>
+          <div class="card">
+            <h3>Value Won</h3>
+            <h2>₹6.4Cr</h2>
+            <p><span class="increse">+15%</span> vs last quarter</p>
+          </div>
+          <div class="card">
+            <h3>Avg. Bid Value</h3>
+            <h2>₹58L</h2>
+            <p><span class="increse">+3%</span> vs last quarter</p>
+          </div>
+        </div>
+
+        <div class="charts-row">
+          <div class="chart-card">
+            <h3>Bids Submitted vs Won</h3>
+            <p class="chart-subtitle">Last 6 months</p>
+            <canvas id="bidsTrendChart"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Win Rate by Category</h3>
+            <p class="chart-subtitle">Across active sectors</p>
+            <canvas id="categoryChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script>
+      const purple = "rgb(152, 127, 210)";
+      const navy = "rgb(18, 18, 114)";
+
+      new Chart(document.getElementById("bidsTrendChart"), {
+        type: "line",
+        data: {
+          labels: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+          datasets: [
+            {
+              label: "Submitted",
+              data: [10, 14, 12, 16, 18, 19],
+              borderColor: navy,
+              backgroundColor: navy,
+              tension: 0.35,
+              fill: false,
+            },
+            {
+              label: "Won",
+              data: [3, 4, 3, 5, 6, 7],
+              borderColor: purple,
+              backgroundColor: purple,
+              tension: 0.35,
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: "bottom" } },
+          scales: { y: { beginAtZero: true } },
+        },
+      });
+
+      new Chart(document.getElementById("categoryChart"), {
+        type: "doughnut",
+        data: {
+          labels: [
+            "Road Construction",
+            "IT & Software",
+            "Electrical",
+            "Consultancy",
+          ],
+          datasets: [
+            {
+              data: [41, 24, 39, 13],
+              backgroundColor: [
+                navy,
+                purple,
+                "rgb(90,80,140)",
+                "rgb(200,195,225)",
+              ],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: "bottom" } },
+        },
+      });
+    </script>
+  </body>
+</html>

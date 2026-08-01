@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tender.Ai</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="functions">
+        <div class="logo">
+          <div class="logo1"><span>Tender</span>.Ai</div>
+          <div class="logotext">Find , Bid , Win</div>
+        </div>
+        <div class="Func">
+          <i class="fa-solid fa-gauge"></i>
+          <a href="index.html">Dashboard</a>
+        </div>
+        <div class="Func">
+          <i class="fa-solid fa-magnifying-glass"></i
+          ><a href="Find_Tenders.html">Find Tenders</a>
+        </div>
+        <div class="Func active">
+          <i class="fa-solid fa-briefcase"></i
+          ><a href="My_Bids.html">My Bids</a>
+        </div>
+        <div class="Func">
+          <i class="fa-solid fa-chart-line"></i
+          ><a href="Analytics.html">Analytics</a>
+        </div>
+        <div class="Func">
+          <i class="fa-regular fa-bell"></i><a href="Alert.html">Alert</a>
+        </div>
+        <div class="sidebar-divider"></div>
+        <div class="Func">
+          <i class="fa-solid fa-gear"></i><a href="Settings.html">Settings</a>
+        </div>
+      </div>
+      <div class="main">
+        <div class="navbar">
+          <div class="searchbar">
+            <input type="text" placeholder="Search Tender" />
+          </div>
+
+          <i class="fa-regular fa-bell notification"></i>
+          <img
+            class="profilephoto"
+            src="https://res.cloudinary.com/purnesh/image/upload/v1597850424/ti6l5iyewdwzypwzfgj6.png"
+            alt="Account profile"
+          />
+        </div>
+        <div class="header">
+          <h1>My Bids</h1>
+          <p>Track and manage all your submitted bids.</p>
+        </div>
+        <div class="bid-filters">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Active</button>
+          <button class="filter-btn">Under Review</button>
+          <button class="filter-btn">Won</button>
+          <button class="filter-btn">Lost</button>
+          <button class="filter-btn">Draft</button>
+        </div>
+        <div class="mybids-list">
+          <div class="mybid-card">
+            <div class="mybid-header">
+              <h3>Construction of Rural Road — Nashik</h3>
+              <span class="bid-status active-status">Active</span>
+            </div>
+
+            <p class="bid-department">PWD Maharashtra · Nashik</p>
+
+            <div class="bid-details">
+              <div>
+                <span>Tender Value</span>
+                <strong>₹42 Lakh</strong>
+              </div>
+
+              <div>
+                <span>Your Quote</span>
+                <strong>₹39.8 Lakh</strong>
+              </div>
+
+              <div>
+                <span>Submitted</span>
+                <strong>21 Jul 2026</strong>
+              </div>
+
+              <div>
+                <span>Deadline</span>
+                <strong>30 Jul 2026</strong>
+              </div>
+            </div>
+
+            <div class="progress-section">
+              <div class="progress-text">
+                <span>Bid Progress</span>
+                <span>70%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div class="bid-actions">
+              <button class="action-btn primary-btn">View Details</button>
+              <button class="action-btn secondary-btn">Edit Bid</button>
+              <button class="action-btn danger-btn">Withdraw</button>
+            </div>
+          </div>
+          <div class="mybid-card">
+            <div class="bid-header">
+              <div>
+                <h3>Construction of Rural Road - Nashik</h3>
+                <p class="department">PWD Maharashtra • Nashik</p>
+              </div>
+
+              <span class="status active">Active</span>
+            </div>
+
+            <div class="bid-details">
+              <div class="detail">
+                <p>Tender Value</p>
+                <h4>₹42 Lakh</h4>
+              </div>
+
+              <div class="detail">
+                <p>Your Quote</p>
+                <h4>₹39.8 Lakh</h4>
+              </div>
+
+              <div class="detail">
+                <p>Submitted</p>
+                <h4>21 Jul 2026</h4>
+              </div>
+
+              <div class="detail">
+                <p>Deadline</p>
+                <h4>30 Jul 2026</h4>
+              </div>
+            </div>
+
+            <div class="progress-section">
+              <div class="progress-text">
+                <span>Bid Progress</span>
+                <span>70%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div class="bid-buttons">
+              <button class="view-btn">View Details</button>
+              <button class="edit-btn">Edit Bid</button>
+              <button class="withdraw-btn">Withdraw</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
