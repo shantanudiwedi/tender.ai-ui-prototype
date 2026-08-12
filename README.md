@@ -1,29 +1,39 @@
-# TenderAI — UI Prototype
+# Tender.AI — UI Prototype
 
-A frontend prototype for **TenderAI**, an AI-powered tender intelligence platform concept for India's government procurement market (bid value prediction, win probability scoring, smart documentation generation).
+A frontend prototype for **Tender.AI**, an AI-powered tender intelligence platform that helps businesses discover and win government tenders.
 
-This repo is the **UI/UX layer only** — built as a hands-on project while learning HTML, CSS, and JavaScript. No backend yet; that's the next phase.
+Built from scratch with HTML, CSS, and JavaScript — no frameworks, no templates, no tutorial-following. Every page was designed and coded to actually understand the fundamentals (flexbox, the box model, responsive layout) rather than just copy a pattern.
+
+## 🔗 What's inside
+
+Six fully designed pages simulating a real product:
+
+- **Dashboard** — at-a-glance overview of tender activity
+- **Tender Search** — browse and filter available government tenders
+- **Bid Tracking** — track the status of submitted bids
+- **Analytics** — live charts visualizing tender/bid performance
+- **Alerts** — notification system for new or closing tenders
+- **Settings** — user/account configuration
+
 
 ## 🔗 Live Demo
 https://shantanudiwedi.github.io/tender.ai-ui-prototype/
 
-## 📄 Pages
-- **Dashboard** — overview stats (total/active tenders, bids submitted, success ratio)
-- **Find Tenders** — searchable/filterable tender listing (state, category, deadline, value)
-- **My Bids** — bid tracking with status, progress, and actions
-- **Analytics** — bid performance charts (built with Chart.js)
-- **Alerts** — tender match and deadline notifications
-- **Settings** — profile and account management
-
-## 🛠️ Built With
-- HTML5
-- CSS3 (custom, no framework)
-- JavaScript (Chart.js for data visualization)
 
 ## 🚧 Status
-UI prototype — static pages, no backend/data persistence yet. Actively being developed as I learn.
 
-## 📌 What's Next
-- Connect forms and buttons to real functionality
-- Backend integration (bid prediction, win probability model)
-- Responsive/mobile layout
+This is a **frontend-only prototype** — not yet connected to a backend or live data. It exists to validate the UI/UX direction before backend work begins.
+
+## 🛠️ Built with
+
+- HTML5
+- CSS3 (Flexbox/Grid layouts)
+- Vanilla JavaScript
+
+## 🎯 Why this project
+
+Built while learning web development by shipping something real instead of following along with tutorials — the fastest way I found to actually retain concepts like flexbox and the box model was to build a product I actually cared about.
+
+## 📌 Part of
+
+This UI prototype is part of the larger **TenderAI** initiative — an AI x GovTech platform pitched at Redrob's India.Runs Ideathon.
