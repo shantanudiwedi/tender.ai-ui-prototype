@@ -1,4 +1,4 @@
-# Tender.AI — UI Prototype
+# Tender.AI — UI Prototype 
 
 A frontend prototype for **Tender.AI**, an AI-powered tender intelligence platform that helps businesses discover and win government tenders.
 
